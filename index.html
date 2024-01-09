@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <main class="main">
+        <aside class="aside">
+            <nav class="aside__nav">
+                <div class="aside__logo logo">
+                    <img src="./assets/img/logo.svg" alt="logo" class="logo__img">
+                    <h1 class="logo__title hide">Dashboard <span>v.01</span></h1>
+                </div>
+                <ul class="aside__list nav-list">
+                    <li class="nav-list__item">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/svg/sprite/sprite.svg#key" class="nav-list__icon"></use>
+                        </svg>
+                        <p class="hide">Dashboard</p>
+                    </li>
+                    <li class="nav-list__item">
+                        <div class="nav-list__wrapper">
+                            <svg width="24" height="24">
+                                <use xlink:href="./assets/svg/sprite/sprite.svg#square" class="nav-list__icon nav-list__icon_fill"></use>
+                            </svg>
+                            <p class="hide">Product</p>
+                        </div>
+                        <svg width="16" height="16" class="hide">
+                            <use xlink:href="./assets/svg/sprite/sprite.svg#chevrone" class="nav-list__icon hide"></use>
+                        </svg>
+                    </li>
+                    <li class="nav-list__item">
+                        <div class="nav-list__wrapper">
+                            <svg width="24" height="24">
+                                <use xlink:href="./assets/svg/sprite/sprite.svg#user" class="nav-list__icon"></use>
+                            </svg>
+                            <p class="hide">Customers</p>
+                        </div>
+                        <svg width="16" height="16" class="hide">
+                            <use xlink:href="./assets/svg/sprite/sprite.svg#chevrone" class="nav-list__icon hide"></use>
+                        </svg>
+                    </li>
+                    <li class="nav-list__item">
+                        <div class="nav-list__wrapper">
+                            <svg width="24" height="24">
+                                <use xlink:href="./assets/svg/sprite/sprite.svg#wallet" class="nav-list__icon"></use>
+                            </svg>
+                            <p class="hide">Income</p>
+                        </div>
+                        <svg width="16" height="16" class="hide">
+                            <use xlink:href="./assets/svg/sprite/sprite.svg#chevrone" class="nav-list__icon hide"></use>
+                        </svg>
+                    </li>
+                    <li class="nav-list__item">
+                        <div class="nav-list__wrapper">
+                            <svg width="24" height="24">
+                                <use xlink:href="./assets/svg/sprite/sprite.svg#discount" class="nav-list__icon nav-list__icon_fill"></use>
+                            </svg>
+                            <p class="hide">Promote</p>
+                        </div>
+                        <svg width="16" height="16" class="hide">
+                            <use xlink:href="./assets/svg/sprite/sprite.svg#chevrone" class="nav-list__icon hide"></use>
+                        </svg>
+                    </li>
+                    <li class="nav-list__item">
+                        <div class="nav-list__wrapper">
+                            <svg width="24" height="24">
+                                <use xlink:href="./assets/svg/sprite/sprite.svg#message" class="nav-list__icon nav-list__icon_fill"></use>
+                            </svg>
+                            <p class="hide">Help</p>
+                        </div>
+                        <svg width="16" height="16" class="hide">
+                            <use xlink:href="./assets/svg/sprite/sprite.svg#chevrone" class="nav-list__icon "></use>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+            <div class="aside__user user">
+                <img src="./assets/img/user-photo.png" alt="user-photo" class="user__photo">
+                <div class="user__info hide">
+                    <p class="user__name">Evano</p>
+                    <p class="user__post">Project Manager</p>
+                </div>
+            </div>
+        </aside>
+        <section class="customers">
+            <div class="customers__wrapper">
+                <h2 class="customers__title">
+                    Hello Evano 👋🏼,
+                </h2>
+                <div class="customers__table">
+                    <div class="customers__table_wrapper">
+                        <div class="customers__table_heading">
+                            <h3 class="customers__table_title">
+                                All Customers
+                            </h3>
+                            <p class="customers__table_subtitle">Active Members</p>
+                        </div>
+                        <form class="customers__table_form">
+                            <input type="search" placeholder="Search" class="customers__table_input">
+                        </form>
+                    </div>
+                    <table class="customers__tbl customers-table">
+                        <thead>
+                            <th>Customer Name</th>
+                            <th>Company</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                            <th>Status</th>
+                        </thead>
+                        <tbody id="customers-table__list">
+    
+                        </tbody>
+                    </table>
+                    <div class="customers__footer">
+                        <p class="customers__footer_text">Showing data 1 to 8 of  256K entries</p>
+                        <ul class="customers__footer_pages">
+                            <li class="customers__footer_page">
+                                <svg width="5" height="7">
+                                    <use xlink:href="./assets/svg/sprite/sprite.svg#arrow-left" class="footer__page_arrow"></use>
+                                </svg>
+                            </li>
+                            <li class="customers__footer_page active">
+                                1
+                            </li>
+                            <li class="customers__footer_page">
+                                2
+                            </li>
+                            <li class="customers__footer_page">
+                                3
+                            </li>
+                            <li class="customers__footer_page">
+                                4
+                            </li>
+                            <li class="customers__footer_page">
+                                ...
+                            </li>
+                            <li class="customers__footer_page">
+                                40
+                            </li>
+                            <li class="customers__footer_page">
+                                <svg width="5" height="7">
+                                    <use xlink:href="./assets/svg/sprite/sprite.svg#arrow-right" class="footer__page_arrow"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
